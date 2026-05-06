@@ -1,1 +1,19 @@
-
+{
+  "name": "auto-joiner",
+  "version": "3.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup": "node setup.js",
+    "daemon": "pm2 start index.js --name auto-joiner",
+    "stop": "pm2 stop auto-joiner",
+    "restart": "pm2 restart auto-joiner"
+  },
+  "dependencies": {
+    "puppeteer-core": "^21.6.1",
+    "readline-sync": "^1.4.10",
+    "node-cron": "^3.0.3",
+    "chalk": "^4.1.2",
+    "boxen": "^5.1.2"
+  }
+}
